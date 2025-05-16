@@ -3,9 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sp
 import plotly.graph_objects as go
+import pandas as pd
 from algorithms.root_finding import bisection, newton, fixed_point
-from algorithms.systems import gaussian_elimination, jacobi
-from algorithms.visualization import plot_convergence, plot_iterations
+from algorithms.systems import gaussian_elimination, jacobi, lu_decomposition, gauss_seidel
+from algorithms.visualization import plot_convergence, plot_iterations, plot_matrix, plot_system_convergence, plot_lu_matrices
+from systems_page import systems_page
+from interpolation_page import interpolation_page
 
 st.set_page_config(
     page_title="Numerical Playground",
@@ -254,7 +257,20 @@ def root_finding_page():
             - May converge slowly or diverge
             """)
 
-def systems_page():
+def optimization_page():
+    st.header("Optimization Methods")
+    st.info("This section is under development")
+    
+    # Placeholder for optimization implementation
+    st.subheader("Coming Soon:")
+    st.markdown("""
+    - Gradient Descent
+    - Golden Section Search
+    - Newton's Method for Optimization
+    """)
+
+def systems_page_placeholder():
+    # This function is not used anymore, but we keep it for reference
     st.header("Systems of Equations")
     st.info("This section is under development")
     
@@ -267,7 +283,7 @@ def systems_page():
     - Gauss-Seidel Method
     """)
 
-def interpolation_page():
+def interpolation_page_placeholder():
     st.header("Interpolation Methods")
     st.info("This section is under development")
     
@@ -277,18 +293,6 @@ def interpolation_page():
     - Lagrange Interpolation
     - Newton's Divided Differences
     - Cubic Splines
-    """)
-
-def optimization_page():
-    st.header("Optimization Methods")
-    st.info("This section is under development")
-    
-    # Placeholder for optimization implementation
-    st.subheader("Coming Soon:")
-    st.markdown("""
-    - Gradient Descent
-    - Golden Section Search
-    - Newton's Method for Optimization
     """)
 
 if __name__ == "__main__":

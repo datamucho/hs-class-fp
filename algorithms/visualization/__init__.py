@@ -1,1 +1,1 @@
-from .plotting import plot_convergence, plot_iterations 
+from .plotting import plot_convergence, plot_iterations, plot_matrix, plot_system_convergence, plot_lu_matrices, plot_interpolation, plot_lagrange_basis, plot_divided_diff_table 

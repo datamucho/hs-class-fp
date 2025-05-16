@@ -1,1 +1,1 @@
-from . import gaussian_elimination, jacobi 
+from . import gaussian_elimination, jacobi, lu_decomposition, gauss_seidel 
